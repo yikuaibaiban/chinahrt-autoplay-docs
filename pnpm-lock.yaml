@@ -14,6 +14,9 @@ importers:
       '@vuepress/plugin-back-to-top':
         specifier: 2.0.0-rc.30
         version: 2.0.0-rc.30(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))
+      '@vuepress/plugin-baidu-analytics':
+        specifier: 2.0.0-rc.31
+        version: 2.0.0-rc.31(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))
       '@vuepress/plugin-search':
         specifier: 2.0.0-rc.30
         version: 2.0.0-rc.30(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))
@@ -413,6 +416,11 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.11
 
+  '@vuepress/helper@2.0.0-rc.31':
+    resolution: {integrity: sha512-mnYN0nceTYXJRXsWv+//+UQaDUGooLmOfRxnqJOQ2G9ZMgaeKC1vjUWOiOjQ3SeG/qEoth+TXyy5GcuT6K4HaQ==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.12
+
   '@vuepress/markdown@2.0.0-rc.11':
     resolution: {integrity: sha512-mEvL0Q2G0c0oV/Leb/WX7lYsvLeeG8CDZsw6XvIy96nmlbo+qRV79gyoRgnfom8qwjHdbe74TdM1mhcPHixs0Q==}
 
@@ -425,6 +433,11 @@ packages:
     resolution: {integrity: sha512-cdwQfu3kt+EOgaO3asKWi+/Z+uYUV0lwejej+Vxa1I3DPxO8Vw1BbAggb8JLp5qp2oOlW+jHf6BMuCkrexUjpA==}
     peerDependencies:
       vuepress: 2.0.0-rc.11
+
+  '@vuepress/plugin-baidu-analytics@2.0.0-rc.31':
+    resolution: {integrity: sha512-/GChbRz56NiKE4nFxahArtrRt5omtUhBw+yqQgGdguIZxX9M1nCB2qc0hD0nAIOGdQEtSNrVeQL7CszAjXUOng==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.12
 
   '@vuepress/plugin-copy-code@2.0.0-rc.30':
     resolution: {integrity: sha512-KtuaTNk1miieXLhsJroLn1+LRoC7a4kmPiG0YZFmxjVnmi+OylX6t2kgPMaaf9lNRSRjqiv5fHwkCWhurV+UZQ==}
@@ -1508,6 +1521,17 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vuepress/helper@2.0.0-rc.31(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))':
+    dependencies:
+      '@vue/shared': 3.4.27
+      cheerio: 1.0.0-rc.12
+      fflate: 0.8.2
+      gray-matter: 4.0.3
+      vue: 3.4.27(typescript@5.4.5)
+      vuepress: 2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
+    transitivePeerDependencies:
+      - typescript
+
   '@vuepress/markdown@2.0.0-rc.11':
     dependencies:
       '@mdit-vue/plugin-component': 2.1.3
@@ -1546,6 +1570,14 @@ snapshots:
       vuepress: 2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
     transitivePeerDependencies:
       - '@vue/composition-api'
+      - typescript
+
+  '@vuepress/plugin-baidu-analytics@2.0.0-rc.31(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.31(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))
+      vue: 3.4.27(typescript@5.4.5)
+      vuepress: 2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
+    transitivePeerDependencies:
       - typescript
 
   '@vuepress/plugin-copy-code@2.0.0-rc.30(typescript@5.4.5)(vuepress@2.0.0-rc.11(@vuepress/bundler-vite@2.0.0-rc.11(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5))(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))':
