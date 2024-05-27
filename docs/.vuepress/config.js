@@ -17,6 +17,18 @@ export default defineUserConfig({
 		},
 	},
 
+	head:[
+		"script",
+		{},
+		`var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?aeab4eebc94827112a8b857ad2fac7e6";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();`
+	],
+
 	theme: defaultTheme({
 		logo: '/images/logo.png',
 
